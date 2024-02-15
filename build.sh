@@ -18,10 +18,6 @@ do  dir=$(dirname "$inc")
     test -f "$inc" || ! echo "CC65 include file '$inc' does not exist"      || exit 1
 done
 
-
-# cleanup
-rm -f *.o *.neo *.map neo6502.lib{,.temp}
-
 # compile
 export CC65_HOME="$_CC65_HOME"
 ca65 crt0.s
