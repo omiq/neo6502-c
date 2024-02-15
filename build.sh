@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Hello World C example for the Neo6502 (build script)
-#
+# Neo6502 build script
 # requires 'cc65' compiler suite
 
 
