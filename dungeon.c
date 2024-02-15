@@ -20,7 +20,7 @@ unsigned char x=19;
 unsigned char y=8;
 unsigned char old_x, old_y, direction_x, direction_y, fx, fy;
 unsigned char room=0;
-unsigned char buffer [sizeof(int)*8+1];
+unsigned char buffer [sizeof(int)*40+1];
 
 // Player 
 unsigned char keys,idols,potion=0;
@@ -173,7 +173,7 @@ void load_room() {
             enemies[enemy_count].y = pos/40;
             enemies[enemy_count].old_x = enemies[enemy_count].x;
             enemies[enemy_count].old_y = enemies[enemy_count].y;
-            enemies[enemy_count].health = 33;
+            enemies[enemy_count].health = 25;
             enemies[enemy_count].strength = 5;
             enemies[enemy_count].speed = 1;
             enemies[enemy_count].armour = 10;
@@ -193,7 +193,7 @@ void load_room() {
             enemies[enemy_count].y = pos/40;
             enemies[enemy_count].old_x = enemies[enemy_count].x;
             enemies[enemy_count].old_y = enemies[enemy_count].y;
-            enemies[enemy_count].health = 15;
+            enemies[enemy_count].health = 10;
             enemies[enemy_count].strength = 5;
             enemies[enemy_count].speed = 2;
             enemies[enemy_count].armour = 0;
@@ -240,14 +240,18 @@ unsigned int which_enemy(unsigned char ex, unsigned char ey) {
 
 void attack(int weapon, unsigned char ax, unsigned char ay)
 {
-    int rnum = 0;
+    int rnum = 20;
     this_enemy = 0;
     this_enemy = which_enemy(ax,ay);
+
     if(this_enemy == 0) {
         return;
     } 
 
-    rnum = (rand() % (20 - 1 + 1)) + 1; 
+    rnum = rand() % 20; 
+    // gotoxy(2,2);
+    // sprintf(buffer,"dice roll %d",rnum);
+    // puts(buffer);
 
     if(rnum > enemies[this_enemy].armour+enemies[this_enemy].speed) {
 
@@ -256,7 +260,8 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
         if(enemies[this_enemy].health>0) 
         {
             gotoxy(0,0);
-            sprintf(buffer,"hit!! enemy health: %3d    ", enemies[this_enemy].health); puts(buffer);
+            sprintf(buffer,"hit!! enemy health: %3d    ", enemies[this_enemy].health); 
+            puts(buffer);
             timer=dumb_wait(1000);
         }
 
@@ -264,7 +269,8 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
         
     } else {
         gotoxy(0,0);
-        sprintf(buffer,"miss! enemy health: %3d    ", enemies[this_enemy].health); puts(buffer);
+        sprintf(buffer,"miss! enemy health: %3d    ", enemies[this_enemy].health); 
+        puts(buffer);
         if((x == ax && y == ay)||(x == ax && (y == ay + 1 || y == ay - 1)) || (y == ay && (x == ax + 1 || x == ax - 1))) 
         {
             health -= enemies[this_enemy].strength;
@@ -293,9 +299,9 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
 void enemy_attack(unsigned int this_enemy)
 {
     int rnum = 0;
-    rnum = (rand() % (20 - 1 + 1)) + 1; 
+    //rnum = (rand() % 20); 
 
-    if(rnum > 10) {
+    if(rnum > 15) {
 
         // Damage!
         if(health < 1 || (health-enemies[this_enemy].strength) < 1) 
@@ -480,7 +486,8 @@ bool game_over() {
 void game_loop() {
 
     gotoxy(0,24);
-    sprintf(buffer," k: %02d S: %03d *: %03d score: %04d", keys,health, magic, score); puts(buffer);
+    sprintf(buffer," K: %02d H: %03d *: %03d score: %04d", keys, health, magic, score); 
+    puts(buffer);
 
     // Change direction
     if(x != old_x || y != old_y) {
@@ -509,7 +516,7 @@ void game_loop() {
             case 'A': 
             case 'o':
                 if(sword==true) {
-                    draw_momentary_object(x-1,y,x-1,y,131,2000); 
+                    draw_momentary_object(x-1,y,x-1,y,45,2000); 
                     attack(10,x-1,y);
                 }
                 break;     
@@ -522,7 +529,7 @@ void game_loop() {
             case 'D': 
             case 'p':
                 if(sword==true) {
-                    draw_momentary_object(x+1,y,x+1,y,131,2000); 
+                    draw_momentary_object(x+1,y,x+1,y,45,2000); 
                     attack(10,x+1,y);
                 }
                 break; 
@@ -536,7 +543,7 @@ void game_loop() {
 
                     c=map(fx,fy);
                     while(c==32 && magic > 0) {             
-                        draw_momentary_object(fx,fy,fx,fy,'*',200); 
+                        draw_momentary_object(fx,fy,fx,fy,42,200); 
                         magic-=1;
                         fx = fx+direction_x;
                         fy = fy+direction_y;  
