@@ -1,0 +1,4 @@
+*.neo
+*.map
+*.dump
+*.o
