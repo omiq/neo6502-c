@@ -1,0 +1,591 @@
+Modules list:
+-------------
+dungeon.o:
+    CODE              Offs=000000  Size=001662  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=0001DE  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=002B30  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000BCE  Align=00001  Fill=0000
+neo6502.lib(crt0.o):
+    STARTUP           Offs=000000  Size=000021  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_directerrno.o):
+    CODE              Offs=001662  Size=00000A  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_file.o):
+    DATA              Offs=000BCE  Size=00001E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_hextab.o):
+    RODATA            Offs=0001DE  Size=000010  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_longminstr.o):
+    RODATA            Offs=0001EE  Size=00000C  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_oserror.o):
+    BSS               Offs=002B30  Size=000001  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_printf.o):
+    CODE              Offs=00166C  Size=0003A5  Align=00001  Fill=0000
+    BSS               Offs=002B31  Size=00002B  Align=00001  Fill=0000
+    DATA              Offs=000BEC  Size=000003  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(_seterrno.o):
+    CODE              Offs=001A11  Size=000009  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(add.o):
+    CODE              Offs=001A1A  Size=00001C  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(addysp.o):
+    CODE              Offs=001A36  Size=00000E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(axlong.o):
+    CODE              Offs=001A44  Size=00000D  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(condes.o):
+    CODE              Offs=001A51  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=000BEF  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(copydata.o):
+    CODE              Offs=001A5D  Size=00002D  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(ctype.o):
+    RODATA            Offs=0001FA  Size=00008B  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(ctypemask.o):
+    CODE              Offs=001A8A  Size=00001E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(decax1.o):
+    CODE              Offs=001AA8  Size=000007  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(decsp4.o):
+    CODE              Offs=001AAF  Size=00000D  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(decsp6.o):
+    CODE              Offs=001ABC  Size=00000D  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(div.o):
+    CODE              Offs=001AC9  Size=000015  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(errno.o):
+    BSS               Offs=002B5C  Size=000002  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(icmp.o):
+    CODE              Offs=001ADE  Size=00002E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp1.o):
+    CODE              Offs=001B0C  Size=000007  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp2.o):
+    CODE              Offs=001B13  Size=000016  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp4.o):
+    CODE              Offs=001B29  Size=000005  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp5.o):
+    CODE              Offs=001B2E  Size=000005  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp6.o):
+    CODE              Offs=001B33  Size=000005  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(incsp7.o):
+    CODE              Offs=001B38  Size=000005  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(ldaxsp.o):
+    CODE              Offs=001B3D  Size=000009  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(lneg.o):
+    CODE              Offs=001B46  Size=00001E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(lpush.o):
+    CODE              Offs=001B64  Size=000021  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(ltoa.o):
+    CODE              Offs=001B85  Size=000095  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(memcpy.o):
+    CODE              Offs=001C1A  Size=00003C  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(mod.o):
+    CODE              Offs=001C56  Size=000011  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(mul.o):
+    CODE              Offs=001C67  Size=000045  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(mul8.o):
+    CODE              Offs=001CAC  Size=00003A  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(mulax10.o):
+    CODE              Offs=001CE6  Size=000019  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(negabs.o):
+    CODE              Offs=001CFF  Size=000012  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(popptr1.o):
+    CODE              Offs=001D11  Size=00000E  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(push1.o):
+    CODE              Offs=001D1F  Size=000005  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(pusha.o):
+    CODE              Offs=001D24  Size=000016  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(pushax.o):
+    CODE              Offs=001D3A  Size=00001A  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(pushwsp.o):
+    CODE              Offs=001D54  Size=00001C  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(puts.o):
+    CODE              Offs=001D70  Size=000069  Align=00001  Fill=0000
+    DATA              Offs=000C14  Size=000001  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(rand.o):
+    CODE              Offs=001DD9  Size=000031  Align=00001  Fill=0000
+    DATA              Offs=000C15  Size=000004  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(shelp.o):
+    CODE              Offs=001E0A  Size=000020  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(sprintf.o):
+    CODE              Offs=001E2A  Size=00002B  Align=00001  Fill=0000
+    BSS               Offs=002B5E  Size=000001  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(staspidx.o):
+    CODE              Offs=001E55  Size=000016  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(staxsp.o):
+    CODE              Offs=001E6B  Size=00000B  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(strlen.o):
+    CODE              Offs=001E76  Size=000016  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(strlower.o):
+    CODE              Offs=001E8C  Size=000027  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(sub.o):
+    CODE              Offs=001EB3  Size=000015  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(udiv.o):
+    CODE              Offs=001EC8  Size=00004F  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(vsnprintf.o):
+    CODE              Offs=001F17  Size=0000DA  Align=00001  Fill=0000
+    DATA              Offs=000C19  Size=000008  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(vsprintf.o):
+    CODE              Offs=001FF1  Size=000012  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(zerobss.o):
+    CODE              Offs=002003  Size=000023  Align=00001  Fill=0000
+/opt/homebrew/Cellar/cc65/2.19/share/cc65/lib/none.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+ZEROPAGE              000000  000019  00001A  00001
+STARTUP               000800  000820  000021  00001
+ONCE                  000821  00082C  00000C  00001
+CODE                  00082D  002852  002026  00001
+RODATA                002853  002AD7  000285  00001
+DATA                  002AD8  0036F8  000C21  00001
+BSS                   0036F9  006257  002B5F  00001
+
+
+Exports list by name:
+---------------------
+__BSS_RUN__               0036F9 RLA    __BSS_SIZE__              002B5F REA    
+__CONSTRUCTOR_COUNT__     000000 REA    __CONSTRUCTOR_TABLE__     00082D RLA    
+__DATA_LOAD__             002AD8 RLA    __DATA_RUN__              002AD8 RLA    
+__DATA_SIZE__             000C21 REA    __DESTRUCTOR_COUNT__      000000 REA    
+__DESTRUCTOR_TABLE__      002AD8 RLA    __RAM_SIZE__              00EE00 REA    
+__RAM_START__             000800 RLA    __STACKSIZE__             000400 REA    
+__STARTUP__               000001 REA    __ctype                   002A4D RLA    
+__ctypeidx                002A58 RLA    __directerrno             001E8F RLA    
+__errno                   006255 RLA    __hextab                  002A31 RLA    
+__longminstr              002A41 RLA    __oserror                 006229 RLA    
+__printf                  001F8C RLA    __seterrno                00223E RLA    
+_ltoa                     0023CA RLA    _main                     001E05 RLA    
+_memcpy                   002447 RLA    _puts                     00259D RLA    
+_rand                     002606 RLA    _sprintf                  002657 RLA    
+_srand                    002628 RLA    _stdout                   0036C0 RLA    
+_strlen                   0026A3 RLA    _strlower                 0026B9 RLA    
+_ultoa                    00240B RLA    _vsprintf                 00281E RLA    
+_write                    000861 RLA    addysp                    002264 RLA    
+addysp1                   002263 RLA    axlong                    002271 RLA    
+axulong                   002277 RLA    copydata                  00228A RLA    
+ctypemaskdirect           0022BB RLA    decax1                    0022D5 RLA    
+decsp4                    0022DC RLA    decsp6                    0022E9 RLA    
+donelib                   00227E RLA    incsp1                    002339 RLA    
+incsp2                    002348 RLA    incsp4                    002356 RLA    
+incsp5                    00235B RLA    incsp6                    002360 RLA    
+incsp7                    002365 RLA    initlib                   000821 RLA    
+ldax0sp                   00236A RLA    ldaxysp                   00236C RLA    
+mul8x16                   0024DB RLA    mul8x16a                  0024E5 RLA    
+mulax10                   002513 RLA    negax                     002530 RLA    
+negeax                    002373 RLA    popax                     002340 RLA    
+popptr1                   00253E RLA    popsargsudiv16            002637 RLA    
+ptr1                      000008 RLZ    ptr2                      00000A RLZ    
+ptr3                      00000C RLZ    ptr4                      00000E RLZ    
+push1                     00254C RLA    pusha                     002555 RLA    
+pusha0                    002569 RLA    pushax                    00256B RLA    
+pusheax                   00239A RLA    pushw0sp                  002581 RLA    
+pushwysp                  002583 RLA    regbank                   000014 RLZ    
+regsave                   000004 RLZ    sp                        000000 RLZ    
+sreg                      000002 RLZ    staspidx                  002682 RLA    
+stax0sp                   002698 RLA    staxysp                   00269A RLA    
+tmp1                      000010 RLZ    tmp2                      000011 RLZ    
+tosadda0                  002247 RLA    tosaddax                  002249 RLA    
+tosdiva0                  0022F6 RLA    tosicmp                   00230D RLA    
+tosmoda0                  002483 RLA    tossuba0                  0026E0 RLA    
+tosumula0                 0024D9 RLA    tosumulax                 002494 RLA    
+udiv16                    002706 RLA    vsnprintf                 002747 RLA    
+zerobss                   002830 RLA    
+
+
+Exports list by value:
+----------------------
+sp                        000000 RLZ    __CONSTRUCTOR_COUNT__     000000 REA    
+__DESTRUCTOR_COUNT__      000000 REA    __STARTUP__               000001 REA    
+sreg                      000002 RLZ    regsave                   000004 RLZ    
+ptr1                      000008 RLZ    ptr2                      00000A RLZ    
+ptr3                      00000C RLZ    ptr4                      00000E RLZ    
+tmp1                      000010 RLZ    tmp2                      000011 RLZ    
+regbank                   000014 RLZ    __STACKSIZE__             000400 REA    
+__RAM_START__             000800 RLA    initlib                   000821 RLA    
+__CONSTRUCTOR_TABLE__     00082D RLA    _write                    000861 RLA    
+__DATA_SIZE__             000C21 REA    _main                     001E05 RLA    
+__directerrno             001E8F RLA    __printf                  001F8C RLA    
+__seterrno                00223E RLA    tosadda0                  002247 RLA    
+tosaddax                  002249 RLA    addysp1                   002263 RLA    
+addysp                    002264 RLA    axlong                    002271 RLA    
+axulong                   002277 RLA    donelib                   00227E RLA    
+copydata                  00228A RLA    ctypemaskdirect           0022BB RLA    
+decax1                    0022D5 RLA    decsp4                    0022DC RLA    
+decsp6                    0022E9 RLA    tosdiva0                  0022F6 RLA    
+tosicmp                   00230D RLA    incsp1                    002339 RLA    
+popax                     002340 RLA    incsp2                    002348 RLA    
+incsp4                    002356 RLA    incsp5                    00235B RLA    
+incsp6                    002360 RLA    incsp7                    002365 RLA    
+ldax0sp                   00236A RLA    ldaxysp                   00236C RLA    
+negeax                    002373 RLA    pusheax                   00239A RLA    
+_ltoa                     0023CA RLA    _ultoa                    00240B RLA    
+_memcpy                   002447 RLA    tosmoda0                  002483 RLA    
+tosumulax                 002494 RLA    tosumula0                 0024D9 RLA    
+mul8x16                   0024DB RLA    mul8x16a                  0024E5 RLA    
+mulax10                   002513 RLA    negax                     002530 RLA    
+popptr1                   00253E RLA    push1                     00254C RLA    
+pusha                     002555 RLA    pusha0                    002569 RLA    
+pushax                    00256B RLA    pushw0sp                  002581 RLA    
+pushwysp                  002583 RLA    _puts                     00259D RLA    
+_rand                     002606 RLA    _srand                    002628 RLA    
+popsargsudiv16            002637 RLA    _sprintf                  002657 RLA    
+staspidx                  002682 RLA    stax0sp                   002698 RLA    
+staxysp                   00269A RLA    _strlen                   0026A3 RLA    
+_strlower                 0026B9 RLA    tossuba0                  0026E0 RLA    
+udiv16                    002706 RLA    vsnprintf                 002747 RLA    
+_vsprintf                 00281E RLA    zerobss                   002830 RLA    
+__hextab                  002A31 RLA    __longminstr              002A41 RLA    
+__ctype                   002A4D RLA    __ctypeidx                002A58 RLA    
+__DESTRUCTOR_TABLE__      002AD8 RLA    __DATA_RUN__              002AD8 RLA    
+__DATA_LOAD__             002AD8 RLA    __BSS_SIZE__              002B5F REA    
+_stdout                   0036C0 RLA    __BSS_RUN__               0036F9 RLA    
+__oserror                 006229 RLA    __errno                   006255 RLA    
+__RAM_SIZE__              00EE00 REA    
+
+
+Imports list:
+-------------
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s(8)
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s(8)
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s(18)
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s(18)
+__DATA_LOAD__ ([linker generated]):
+    copydata.o                common/copydata.s(8)
+__DATA_RUN__ ([linker generated]):
+    copydata.o                common/copydata.s(8)
+__DATA_SIZE__ ([linker generated]):
+    copydata.o                common/copydata.s(8)
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s(19)
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s(19)
+__RAM_SIZE__ ([linker generated]):
+    crt0.o                    crt0.s(9)
+__RAM_START__ ([linker generated]):
+    crt0.o                    crt0.s(9)
+__STACKSIZE__ ([linker generated]):
+    crt0.o                    crt0.s(10)
+__STARTUP__ (crt0.o):
+    dungeon.o                 dungeon.s(13)
+__ctype (ctype.o):
+    ctypemask.o               common/ctypemask.s(23)
+__ctypeidx (ctype.o):
+    ctypemask.o               common/ctypemask.s(24)
+__directerrno (_directerrno.o):
+    vsnprintf.o               /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/errno.inc(10)
+__errno (errno.o):
+    _seterrno.o               /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/errno.inc(7)
+__hextab (_hextab.o):
+    ltoa.o                    common/ltoa.s(10)
+__longminstr (_longminstr.o):
+    ltoa.o                    common/ltoa.s(10)
+__oserror (_oserror.o):
+    _directerrno.o            /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/errno.inc(7)
+__printf (_printf.o):
+    vsnprintf.o               common/vsnprintf.s(10)
+__seterrno (_seterrno.o):
+    _directerrno.o            /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/errno.inc(9)
+_ltoa (ltoa.o):
+    _printf.o                 common/_printf.s(12)
+_main (dungeon.o):
+    crt0.o                    crt0.s(6)
+_memcpy (memcpy.o):
+    vsnprintf.o               common/vsnprintf.s(10)
+_puts (puts.o):
+    dungeon.o                 dungeon.s(14)
+_rand (rand.o):
+    dungeon.o                 dungeon.s(16)
+_sprintf (sprintf.o):
+    dungeon.o                 dungeon.s(15)
+_srand (rand.o):
+    dungeon.o                 dungeon.s(17)
+_stdout (_file.o):
+    puts.o                    ../libwrk/none/puts.s(13)
+_strlen (strlen.o):
+    _printf.o                 common/_printf.s(13)
+    puts.o                    ../libwrk/none/puts.s(15)
+_strlower (strlower.o):
+    _printf.o                 common/_printf.s(13)
+_ultoa (ltoa.o):
+    _printf.o                 common/_printf.s(12)
+_vsprintf (vsprintf.o):
+    sprintf.o                 common/sprintf.s(8)
+_write (dungeon.o):
+    puts.o                    ../libwrk/none/puts.s(16)
+addysp (addysp.o):
+    sprintf.o                 common/sprintf.s(8)
+    incsp7.o                  runtime/incsp7.s(8)
+    incsp6.o                  runtime/incsp6.s(8)
+    incsp5.o                  runtime/incsp5.s(8)
+    incsp4.o                  runtime/incsp4.s(8)
+addysp1 (addysp.o):
+    sub.o                     runtime/sub.s(8)
+axlong (axlong.o):
+    _printf.o                 common/_printf.s(11)
+axulong (axlong.o):
+    _printf.o                 common/_printf.s(11)
+copydata (copydata.o):
+    crt0.o                    crt0.s(12)
+ctypemaskdirect (ctypemask.o):
+    strlower.o                common/strlower.s(14)
+decax1 (decax1.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+decsp4 (decsp4.o):
+    lpush.o                   runtime/lpush.s(12)
+    sprintf.o                 common/sprintf.s(8)
+decsp6 (decsp6.o):
+    _printf.o                 common/_printf.s(11)
+donelib (condes.o):
+    crt0.o                    crt0.s(12)
+incsp1 (incsp1.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+incsp2 (incsp2.o):
+    vsnprintf.o               common/vsnprintf.s(9)
+    staspidx.o                runtime/staspidx.s(8)
+    puts.o                    ../libwrk/none/puts.s(80)
+    popptr1.o                 runtime/popptr1.s(8)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+incsp4 (incsp4.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+incsp5 (incsp5.o):
+    dungeon.o                 dungeon.s(6018)
+incsp6 (incsp6.o):
+    vsnprintf.o               common/vsnprintf.s(9)
+    dungeon.o                 dungeon.s(6018)
+incsp7 (incsp7.o):
+    dungeon.o                 dungeon.s(6018)
+initlib (condes.o):
+    crt0.o                    crt0.s(12)
+ldax0sp (ldaxsp.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+ldaxysp (ldaxsp.o):
+    vsnprintf.o               common/vsnprintf.s(9)
+    puts.o                    ../libwrk/none/puts.s(80)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+mul8x16 (mul8.o):
+    mul.o                     runtime/mul.s(8)
+mul8x16a (mul8.o):
+    mul.o                     runtime/mul.s(8)
+mulax10 (mulax10.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+negax (negabs.o):
+    shelp.o                   runtime/shelp.s(11)
+    mod.o                     runtime/mod.s(11)
+    div.o                     runtime/div.s(11)
+negeax (lneg.o):
+    ltoa.o                    common/ltoa.s(9)
+popax (incsp2.o):
+    memcpy.o                  common/memcpy.s(14)
+    ltoa.o                    common/ltoa.s(9)
+    _printf.o                 common/_printf.s(11)
+    vsnprintf.o               common/vsnprintf.s(9)
+    shelp.o                   runtime/shelp.s(11)
+popptr1 (popptr1.o):
+    memcpy.o                  common/memcpy.s(14)
+    ltoa.o                    common/ltoa.s(9)
+    udiv.o                    runtime/udiv.s(9)
+    mul8.o                    runtime/mul8.s(9)
+    mul.o                     runtime/mul.s(9)
+popsargsudiv16 (shelp.o):
+    mod.o                     runtime/mod.s(11)
+    div.o                     runtime/div.s(11)
+ptr1 (zeropage.o):
+    strlower.o                common/strlower.s(13)
+    memcpy.o                  common/memcpy.s(15)
+    ltoa.o                    common/ltoa.s(11)
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(12)
+    vsnprintf.o               common/vsnprintf.s(11)
+    zerobss.o                 common/zerobss.s(9)
+    udiv.o                    runtime/udiv.s(10)
+    staspidx.o                runtime/staspidx.s(9)
+    sprintf.o                 common/sprintf.s(9)
+    shelp.o                   runtime/shelp.s(12)
+    puts.o                    ../libwrk/none/puts.s(11)
+    popptr1.o                 runtime/popptr1.s(9)
+    mulax10.o                 runtime/mulax10.s(9)
+    mul8.o                    runtime/mul8.s(10)
+    mul.o                     runtime/mul.s(10)
+    div.o                     runtime/div.s(12)
+    copydata.o                common/copydata.s(9)
+    dungeon.o                 dungeon.s(11)
+ptr2 (zeropage.o):
+    strlower.o                common/strlower.s(13)
+    memcpy.o                  common/memcpy.s(15)
+    ltoa.o                    common/ltoa.s(11)
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(12)
+    strlen.o                  common/strlen.s(12)
+    copydata.o                common/copydata.s(9)
+ptr3 (zeropage.o):
+    memcpy.o                  common/memcpy.s(15)
+    ltoa.o                    common/ltoa.s(11)
+ptr4 (zeropage.o):
+    udiv.o                    runtime/udiv.s(10)
+    shelp.o                   runtime/shelp.s(12)
+    mul8.o                    runtime/mul8.s(10)
+    mul.o                     runtime/mul.s(10)
+push1 (push1.o):
+    _printf.o                 common/_printf.s(11)
+pusha (pusha.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+pusha0 (pushax.o):
+    push1.o                   runtime/push1.s(8)
+    puts.o                    ../libwrk/none/puts.s(80)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+pushax (pushax.o):
+    _printf.o                 common/_printf.s(11)
+    puts.o                    ../libwrk/none/puts.s(80)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+pusheax (lpush.o):
+    _printf.o                 common/_printf.s(11)
+pushw0sp (pushwsp.o):
+    vsprintf.o                common/vsprintf.s(8)
+pushwysp (pushwsp.o):
+    puts.o                    ../libwrk/none/puts.s(80)
+regbank (zeropage.o):
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(14)
+regsave (zeropage.o):
+    dungeon.o                 dungeon.s(10)
+sp (zeropage.o):
+    memcpy.o                  common/memcpy.s(15)
+    lpush.o                   runtime/lpush.s(13)
+    decsp6.o                  runtime/decsp6.s(8)
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(11)
+    vsnprintf.o               common/vsnprintf.s(11)
+    pushwsp.o                 runtime/pushwsp.s(8)
+    decsp4.o                  runtime/decsp4.s(8)
+    addysp.o                  runtime/addysp.s(8)
+    sub.o                     runtime/sub.s(9)
+    staxsp.o                  runtime/staxsp.s(8)
+    staspidx.o                runtime/staspidx.s(9)
+    sprintf.o                 common/sprintf.s(9)
+    pushax.o                  runtime/pushax.s(8)
+    pusha.o                   runtime/pusha.s(8)
+    popptr1.o                 runtime/popptr1.s(9)
+    ldaxsp.o                  runtime/ldaxsp.s(8)
+    incsp2.o                  runtime/incsp2.s(8)
+    incsp1.o                  runtime/incsp1.s(8)
+    icmp.o                    runtime/icmp.s(9)
+    add.o                     runtime/add.s(12)
+    crt0.o                    /opt/homebrew/Cellar/cc65/2.19/share/cc65/asminc/zeropage.inc(11)
+    dungeon.o                 dungeon.s(10)
+sreg (zeropage.o):
+    lneg.o                    runtime/lneg.s(11)
+    ltoa.o                    common/ltoa.s(11)
+    lpush.o                   runtime/lpush.s(13)
+    axlong.o                  runtime/axlong.s(9)
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(11)
+    udiv.o                    runtime/udiv.s(10)
+    mod.o                     runtime/mod.s(12)
+    icmp.o                    runtime/icmp.s(9)
+staspidx (staspidx.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+stax0sp (staxsp.o):
+    dungeon.o                 dungeon.s(6018)
+staxysp (staxsp.o):
+    vsprintf.o                common/vsprintf.s(8)
+    dungeon.o                 dungeon.s(6018)
+tmp1 (zeropage.o):
+    ltoa.o                    common/ltoa.s(11)
+    _printf.o                 /private/tmp/cc65-20230922-4336-fycnmm/cc65-2.19/asminc/zeropage.inc(13)
+    staspidx.o                runtime/staspidx.s(9)
+    shelp.o                   runtime/shelp.s(12)
+    mul.o                     runtime/mul.s(10)
+    mod.o                     runtime/mod.s(12)
+    div.o                     runtime/div.s(12)
+    copydata.o                common/copydata.s(9)
+    add.o                     runtime/add.s(12)
+tmp2 (zeropage.o):
+    shelp.o                   runtime/shelp.s(12)
+    div.o                     runtime/div.s(12)
+tosadda0 (add.o):
+    dungeon.o                 dungeon.s(6018)
+tosaddax (add.o):
+    dungeon.o                 dungeon.s(6018)
+tosdiva0 (div.o):
+    dungeon.o                 dungeon.s(6018)
+tosicmp (icmp.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+tosmoda0 (mod.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+tossuba0 (sub.o):
+    dungeon.o                 dungeon.s(6018)
+tosumula0 (mul8.o):
+    dungeon.o                 dungeon.s(6018)
+    dungeon.o                 dungeon.s(6018)
+tosumulax (mul.o):
+    dungeon.o                 dungeon.s(6018)
+udiv16 (udiv.o):
+    shelp.o                   runtime/shelp.s(11)
+vsnprintf (vsnprintf.o):
+    vsprintf.o                common/vsprintf.s(9)
+zerobss (zerobss.o):
+    crt0.o                    crt0.s(12)
+
