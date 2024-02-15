@@ -20,6 +20,7 @@ unsigned char x=19;
 unsigned char y=8;
 unsigned char old_x, old_y, direction_x, direction_y, fx, fy;
 unsigned char room=2;
+unsigned char max_rooms=2;
 unsigned char buffer [sizeof(int)*40+1];
 
 // Player 
@@ -149,7 +150,7 @@ void load_room() {
     clrscr();
     gotoxy(0,0);
     sprintf(buffer,"loading room %d",room+1); puts(buffer);
-
+    cputc(141);
     for (pos = 0; pos < 1000; pos++) {   
 
         c=rooms[pos+(1000*room)];
@@ -351,7 +352,7 @@ void enemy_attack(unsigned int this_enemy)
 void move_enemies() {
 
     unsigned char rnd;
-
+    cputc(143);
     // Enemies starts at 1, 0 = no enemy
     for(i=1;i<enemy_count+1;i++)
     {
@@ -411,6 +412,8 @@ void draw_screen() {
 
 void draw_momentary_object(unsigned char obj_old_x, unsigned char obj_old_y, unsigned char obj_x, unsigned char obj_y, unsigned char obj_tile, unsigned int delay) {
 
+    cputc(143);
+
     // Replace tile
     cputcxy(obj_old_x,obj_old_y,map(obj_old_x,obj_old_y));
 
@@ -434,6 +437,7 @@ void draw_move(bool replace) {
     }
 
     // Draw new location
+    cputc(143);
     cputcxy(old_x,old_y,map(old_x,old_y));
     cputcxy(x, y, 64); 
     set_map(x, y, 64);
@@ -445,10 +449,13 @@ void title_screen() {
     clrscr();
     cputcxy(10,10,32);
     gotoxy(18,9);
+    cputc(134);
     puts("Neo6502 DUNGEON\n");
     gotoxy(15,10);
+    cputc(143);
     puts("by RetroGameCoders.com");
     gotoxy(20,14);
+    cputc(140);
     puts("Press a key");
     gotoxy(20,15);
     key=cgetc();
@@ -486,6 +493,7 @@ bool game_over() {
 void game_loop() {
 
     gotoxy(0,24);
+    cputc(139);
     sprintf(buffer," K: %02d H: %03d *: %03d score: %04d", keys, health, magic, score); 
     puts(buffer);
 
@@ -657,6 +665,7 @@ void game_loop() {
             idols+=1;
             if(idols==2) {
                 room+=1;
+                if(room > max_rooms) room=0;
                 load_room();
                 draw_screen();
                 idols=0;
@@ -735,7 +744,7 @@ int main() {
         // Set up the screen
         load_room();
         draw_screen();
-        cputcxy(x,y,'@');
+        cputcxy(x,y,64);
 
         // Game on!
         in_play = true;
