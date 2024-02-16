@@ -18,6 +18,9 @@ do  dir=$(dirname "$inc")
     test -f "$inc" || ! echo "CC65 include file '$inc' does not exist"      || exit 1
 done
 
+# delete
+rm -f $1.neo
+
 # compile
 export CC65_HOME="$_CC65_HOME"
 ca65 crt0.s
