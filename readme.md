@@ -2,7 +2,7 @@
 
 This is a demo game to show how you can use CC65 to code games for the Neo6502 using C/C++. 
 
-Full tutorial at [retrogamecoders.com]([https://retrogamecoders.com](https://retrogamecoders.com/neo6502-cc65/)) (please let me know if you find bugs or have questions)
+Full tutorial at [retrogamecoders.com](https://retrogamecoders.com/neo6502-cc65/) (please let me know if you find bugs or have questions)
 
 ![Screenshot](https://github.com/omiq/neo6502-c/assets/3143825/1d1270c2-c8ef-480f-86c4-b6b1fb82e77e)
 
