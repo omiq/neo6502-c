@@ -19,7 +19,7 @@ unsigned int key,i,c,ex,ey,ax,ay;
 unsigned char x=19;
 unsigned char y=8;
 unsigned char old_x, old_y, direction_x, direction_y, fx, fy;
-unsigned char room=2;
+unsigned char room=0;
 unsigned char max_rooms=2;
 unsigned char buffer [sizeof(int)*40+1];
 
@@ -100,8 +100,8 @@ unsigned char rooms[] = {
  35, 61, 61, 61, 61, 32, 61, 61, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61,
  35, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61,
  35, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61, 32, 32, 32, 32, 32, 32, 32, 61, 61, 61, 61, 32, 32, 32, 32, 32, 32, 32, 61,
- 35, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61, 32, 32, 32, 32, 32, 32, 32, 61, 61, 61, 61, 32, 32, 32, 32, 32, 32, 32, 61,
- 35, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 61, 32, 32, 32, 32, 32, 32, 32, 61, 61, 61, 61, 32, 32, 32, 32, 32, 32, 32, 61,
+ 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61,
+ 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61, 61,
  
  
  // room 3 
@@ -216,8 +216,10 @@ void set_map(char x, char y, int tile) {
 
 
 
-unsigned int dumb_wait(unsigned int delay) {
-    for(timer=0; timer<delay; timer++) {}
+unsigned int nop_delay(unsigned int delay) {
+    for(timer=0; timer<delay*7; timer++) {
+        __asm__ ("NOP");
+    }
     return timer;
 }
 
@@ -263,7 +265,7 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
             gotoxy(0,0);
             sprintf(buffer,"hit!! enemy health: %3d    ", enemies[this_enemy].health); 
             puts(buffer);
-            timer=dumb_wait(1000);
+            timer=nop_delay(1000);
         }
 
 
@@ -276,7 +278,7 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
         {
             health -= enemies[this_enemy].strength;
         }
-        timer=dumb_wait(1000);
+        timer=nop_delay(1000);
     }
 
     if(enemies[this_enemy].health < 1 ) {
@@ -292,7 +294,7 @@ void attack(int weapon, unsigned char ax, unsigned char ay)
 
         // Up the score
         score+=10;
-        timer=dumb_wait(1000);
+        timer=nop_delay(1000);
     }
 
 }
@@ -314,7 +316,7 @@ void enemy_attack(unsigned int this_enemy)
         }    
         gotoxy(0,0);
         sprintf(buffer,"ouch! health: %3d        ", health); puts(buffer);
-        timer=dumb_wait(1000);
+        timer=nop_delay(1000);
 
         
     } else {
@@ -333,7 +335,7 @@ void enemy_attack(unsigned int this_enemy)
                 sprintf(buffer,"block! health: %3d      ", health); puts(buffer);}
         }
         
-        timer=dumb_wait(1000);
+        timer=nop_delay(1000);
     
 
     if(health < 1) {
@@ -342,7 +344,7 @@ void enemy_attack(unsigned int this_enemy)
         gotoxy(0,0);
         puts("enemy defeated you!                  ");
         health = 0;
-        timer=dumb_wait(1000);
+        timer=nop_delay(1000);
     }
 
 }
@@ -421,7 +423,7 @@ void draw_momentary_object(unsigned char obj_old_x, unsigned char obj_old_y, uns
     cputcxy(obj_x,obj_y,obj_tile); 
 
     // Delay
-    timer=dumb_wait(delay);
+    timer=nop_delay(delay);
 
     // Replace tile again
     cputcxy(obj_x,obj_y,map(obj_x,obj_y));
@@ -451,6 +453,7 @@ void title_screen() {
     gotoxy(18,9);
     cputc(134);
     puts("Neo6502 DUNGEON\n");
+    timer=nop_delay(5000);
     gotoxy(15,10);
     cputc(143);
     puts("by RetroGameCoders.com");
@@ -460,7 +463,7 @@ void title_screen() {
     gotoxy(20,15);
     key=cgetc();
     puts("Get ready!");
-    timer=dumb_wait(5000);
+    timer=nop_delay(5000);
     in_play=true;
     clrscr();
 }
@@ -470,12 +473,12 @@ bool game_over() {
     clrscr();
     gotoxy(20,2);
     puts("GAME OVER");
-    timer=dumb_wait(1000);
+    timer=nop_delay(500);
     gotoxy(0,5);
     puts("ah, such a shame,");
     gotoxy(0,7);
     puts("you were doing so well!");
-    timer=dumb_wait(1000);
+    timer=nop_delay(1000);
     gotoxy(0,9);
     sprintf(buffer,"score:%03d",score);
     puts(buffer);
