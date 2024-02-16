@@ -460,7 +460,7 @@ void title_screen() {
     gotoxy(20,14);
     cputc(140);
     puts("Press a key");
-    gotoxy(20,15);
+    gotoxy(21,15);
     key=cgetc();
     puts("Get ready!");
     timer=nop_delay(5000);
@@ -747,6 +747,19 @@ int main() {
         // Set up the screen
         load_room();
         draw_screen();
+        cputc(129);
+        cputcxy(x,y,64);
+        nop_delay(500);
+        cputc(136);
+        cputcxy(x,y,64);
+        nop_delay(500);
+        cputc(129);
+        cputcxy(x,y,64);
+        nop_delay(500);
+        cputc(136);
+        cputcxy(x,y,64);
+        nop_delay(500);
+        cputc(135);
         cputcxy(x,y,64);
 
         // Game on!
