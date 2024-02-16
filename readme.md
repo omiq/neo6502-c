@@ -13,9 +13,11 @@ Gather loot and health.
 
 Avoid goblins and bats.
 
+```
   W
 A S D
 
 F = Fireball (fires in your direction of travel - you need to pick up a potion to top up your magic first)
 
 O/P = Stab Left or Right (you need to pick up a sword first)
+```
