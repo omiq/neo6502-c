@@ -3,7 +3,7 @@
 ![Screenshot](https://github.com/omiq/neo6502-c/assets/3143825/1d1270c2-c8ef-480f-86c4-b6b1fb82e77e)
 
 
-Neo compiled on Apple Silicon Mac is included
+__Neo__ emaultor compiled on Apple Silicon Mac is included
 
 Binaries: [Demo Release](https://github.com/omiq/neo6502-c/releases/tag/Demo)
 
