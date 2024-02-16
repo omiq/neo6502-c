@@ -5,6 +5,8 @@
 
 Neo compiled on Apple Silicon Mac is included
 
+Binaries: [Demo Release](https://github.com/omiq/neo6502-c/releases/tag/Demo)
+
 Launch using ```neo dungeon.neo@800```
 
 
