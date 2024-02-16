@@ -3,6 +3,11 @@
 ![Screenshot](https://github.com/omiq/neo6502-c/assets/3143825/1d1270c2-c8ef-480f-86c4-b6b1fb82e77e)
 
 
+Neo compiled on Apple Silicon Mac is included
+
+Launch using ```neo dungeon.neo@800```
+
+
 ## How to Play
 
 Doors open with keys, or by hitting them repeatedly with your face until you break them (or you run out of health).
